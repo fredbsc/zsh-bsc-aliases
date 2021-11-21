@@ -1,32 +1,30 @@
 #/bin/bash
-#          _             _ _                     
-#  _______| |__     __ _| (_) __ _ ___  ___  ___ 
-# |_  / __| '_ \   / _` | | |/ _` / __|/ _ \/ __|
-#  / /\__ \ | | | | (_| | | | (_| \__ \  __/\__ \
-# /___|___/_| |_|  \__,_|_|_|\__,_|___/\___||___/
-#                                                
-# add the @-aliases for googler
+# 
+#          _              _ _                     
+#  _______| |__      __ _| (_) __ _ ___  ___  ___ 
+# |_  / __| '_ \    / _` | | |/ _` / __|/ _ \/ __|
+#  / /\__ \ | | |  | (_| | | | (_| \__ \  __/\__ \
+# /___|___/_| |_|___\__,_|_|_|\__,_|___/\___||___/
+#              |_____|                            
+# 
+
 source ~/scripts/googler_at
 
-#alias ducks="sudo ls -a | grep -v -e '"^\.\.$' | xargs -i du -ks {} |sort -rn |head -11"
+#alias ducks="sudo ls -a | grep -v -e '^\.\.$' | xargs -i du -ks {} |sort -rn |head -11"
 alias ducks='sudo du -cks * | sort -rn | head -11'
-alias ducksm='sudo du -cms * | sort -rn | head -11'
 
 # list all aliases
 alias aliases="compgen -a"
-alias ali='alias | fzf'
-alias vi='/usr/bin/nvim'
-alias vig='/opt/goneovim-v0.4.12/goneovim'
 
 #system helpers
-alias cat="bat"
+alias ls="ls --color=none"
 alias ..="cd .."
 alias ...="cd ../.."
 alias h='cd ~'
 alias c='clear'
 alias e='exit'
 alias b='cd ~-'
-alias hg=history_fzf
+alias hg='history | grep'
 alias realias='source ~/.bash_aliases'
 alias doc='vi ~/clidoc.md'
 alias ccat='highlight --out-format=ansi'
@@ -36,16 +34,15 @@ function ls {
 }
 alias ls='ls'
 alias l='$(which ls)'
-alias ge='setxkbmap -layout de'
+alias mp='ncmpcpp'
 
-# change dir fzf all from home  / all from root / whithout hidden from home
-
-alias gla='glances'
-
-# alias vim='gvim 2>/dev/null'
-alias vv='tmux split-window -h vi'
-alias vh='tmux split-window vi'
+alias vi='/usr/local/bin/nvim'
+alias vig='/opt/goneovim-v0.4.12/goneovim'
+alias vim='gvim 2>/dev/null'
+alias ci='code-insiders'
 alias z='zathura'
+
+alias we='python3 /run/media/fred/tower/data/programming/py/scrap/weight/weight.py'
 
 #laravel programming
 alias art='php artisan $OPTIONS'
@@ -70,14 +67,11 @@ alias hss5='echo "sshing to homestead PHP 5.6 box ... ..."; cd ~/PhpCode/homeste
 alias hs5edit='cd ~/.homestead-56/; vi Homestead.yaml'
 
 alias sub='/home/fred/Programme-ssd/sublime/sublime_text'
-source ~/.homestead/aliases
+# source ~/.homestead/aliases
 
 #laradock
 alias dc='time docker-compose'
-alias dcr='dc down && dc up -d && dc ps && dc logs'
-alias dcu='time docker-compose up -d && docker-compose ps'
-alias dcd='time docker-compose down'
-alias dcl='docker-compose logs -f'
+alias dcup='time docker-compose up -d'
 alias dcnp='time docker-compose up -d nginx postgres'
 alias dcnm='time docker-compose up -d nginx mysql'
 alias dcw='time docker-compose up -d nginx mysql workspace'  
@@ -85,10 +79,16 @@ alias dcnmm='time docker-compose up -d nginx mysql mailcatcher'
 alias dold='docker-compose exec --user=laradock workspace bash'
 alias doldr='docker-compose exec workspace bash'
 
-alias dolm='docker-compose exec mysql bash'
+alias dolm='docker-compose exec laradock_mysql bash'
 alias dolmm='docker-compose exec mysql /usr/bin/mysql'
 alias dolmdump='docker-compose exec mysql /usr/bin/mysqldump'
 
+alias ali='alias | fzf'
+alias hist='history | cut -c 30- | sort | uniq -u | fzf'
+
+
+# sunny mode
+alias vv='vi +"colorscheme default" +"nocursorline" +"syntax off"'
 
 
 # laravel/vagrant project donkey
@@ -107,73 +107,82 @@ alias kgvb='cd /home/fred/PhpCode/dev-marunas; google-chrome --new-window "http:
 alias kgvart='cd /home/fred/PhpCode/dev-marunas; art'
 alias sskgv='ssh root@edi -t "cd /var/www/dev-marunas/; bash --login"'
 
-# kubernetes
-alias kk='kubectl'
-alias kg='kubectl get'
-
-# sql statment store
-alias sq='sqe yank'
-alias sqn='sqe new'
-
-#ansible
-alias ap='ansible-playbook'
-alias an='ansible'
-
-# Rsync
-alias rco="rsync -avz --progress -h"
-alias rmo="rsync -avz --progress -h --remove-source-files"
-alias rup="rsync -avzu --progress -h"
-alias rsy="rsync -avzu --delete --progress -h"
+#music
+alias cm='cmus'
+alias cr='cmus-remote'
 
 #todo.txt
 export TODOTXT_DEFAULT_ACTION=ls
 alias tt='figlet -f smslant "todo  "$(LANG=en_us_88591; date +"%a  %b%d") && /home/fred/dotfiles/todo.txt/todo.sh'
 source /home/fred/dotfiles/todo.txt/todo_completion
-complete -F _todo tb
+complete -F _todo tt
 
-#taskbook
+# Taskbook
 alias t='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb'
-alias ts='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb -l star'
-alias tl='tb | less'
 
-# timetrap
-alias tz='figlet -f smslant "timetrap  "$(LANG=en_us_88591; date +"%a  %b%d") && echo "https://github.com/samg/timetrap" && echo "" && timetrap'
-
-# weight
-alias we='/run/media/fred/tower/data/programming/py/scrap/weight/wei.sh'
-
-alias ci='code-insiders'
+# emacs
+# alias em='emacsclient -a "" -nqc "$@" &> /dev/null'
+alias em='emacs'
+alias ec='emacs -nw'
 
 # issue
 alias i='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue'
 
-# habito habit manager
-alias ha='figlet -f smslant  "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito'
-alias hac='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito checkin'
-alias hal='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito list'
-alias haa='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito add'
+# timetrap
+alias tz='figlet -f smslant "timetrap  "$(LANG=en_us_88591; date +"%a  %b%d") && timetrap'
 
 # geeknote - evernote cli 
 alias g='geeknote'
 
 #Python
-alias py='python'
+alias p='python'
+
+# Libreoffice
+alias writer='libreoffice6.4 --writer'
 
 # newsbeuter
 alias n='rxvt-unicode -geometry 120x40 -e newsbeuter'
 
-# dmesg with readable timestamps
-alias kmesg='dmesg | perl -ne "BEGIN{\$a= time()- qx!cat /proc/uptime!}; s/\[\s*(\d+)\.\d+\]/localtime(\$1 + \$a)/e; print \$_;"'
+# change dir and ls
+function cl() {
+    builtin cd "$@" && ls
+}
+alias cl=cl
 
+function cla() {
+    builtin cd "$@" && ls -all
+}
+alias cla=cla
+
+# Create a new directory and enter it
+function mkd() {
+    mkdir -p "$@" && cd "$@"
+}
+
+function md() {
+    mkdir -p "$@" && cd "$@"
+}
+
+function xtree {
+    find ${1:-.} -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+}
+
+#plain html
+function server() {
+  local port="${1:-8000}"
+  google-chrome-stable "http://localhost:${port}/"
+  python -m SimpleHTTPServer "$port"
+}
+alias server=server
 alias chrome='/usr/bin/google-chrome-stable'
 
 #git
-alias gnah='git reset --hard && git clean -df'
-alias gg='git log --pretty=format:"%h : %s" --graph -15'
 alias gs='git status'
+alias gg='git log --pretty=format:"%h : %s" --graph'
 
 # Dotfiles git
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 
 # aliases for backup
 alias eq8='ssh root@eq8'
@@ -189,7 +198,7 @@ alias tr='tmuxinator'
 alias tre='tmuxinator edit'
 alias trs='tmuxinator start'
 alias trl='tmuxinator list'
-alias s='trs ssh_to'
+alias s='trs sss'
 
 alias oelv-nas='ssh -p 2222 admin@oelv1'
 
@@ -203,10 +212,7 @@ function vmssh(){
   bash --rcfile .bashrc'
 }
 
-
 dclean() {
-    set -e
-    ask 'Cleanup not used docker images?'
     processes=`docker ps -q -f status=exited`
     if [ -n "$processes" ]; then
 			echo 'Removing exited containers'
@@ -249,23 +255,12 @@ dspacefunction()  {
 alias dspace=dspacefunction
 
 alias pe='pet'
-alias p='pet exec -c'
+alias p='pet exec'
 alias pn='pet new'
 function prev() {
-  PREV=$(fc -lrn | head -n 1)
+  PREV=$(echo `history | tail -n2 | head -n1` | sed 's/.*] //')
   sh -c "pet new `printf %q "$PREV"`"
 }
 
-# bash examples man page like
-alias he='tldr'
-
 # RANGER & fzf
 source ~/.fuzzyrc
-
-# Serach bookmarks from cli
-alias sb='buku --suggest -r'
-alias sbb='buku'
-alias sbs='google-chrome-stable $(buku -p -f 10 | fzf)'
-alias sbu='buku --ai' # Update bokmarks
-alias sg='googler'
-alias transe='trans {=en}'
