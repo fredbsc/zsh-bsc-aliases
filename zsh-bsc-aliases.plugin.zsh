@@ -42,6 +42,10 @@ alias ge='setxkbmap -layout de'
 
 alias gla='glances'
 
+# remote terminal
+alias ssh='TERM=xterm ssh'
+alias sshrc='TERM=xterm sshrc'
+
 # alias vim='gvim 2>/dev/null'
 alias vv='tmux split-window -h vi'
 alias vh='tmux split-window vi'
