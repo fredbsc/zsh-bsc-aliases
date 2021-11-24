@@ -47,8 +47,10 @@ alias ssh='TERM=xterm ssh'
 alias sshrc='TERM=xterm sshrc'
 
 # alias vim='gvim 2>/dev/null'
-alias vv='tmux split-window -h vi'
-alias vh='tmux split-window vi'
+# alias vv='tmux split-window -h vi'
+# alias vh='tmux split-window vi'
+
+# PDF
 alias z='zathura'
 
 #laravel programming
