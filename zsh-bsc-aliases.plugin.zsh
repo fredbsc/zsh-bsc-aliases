@@ -38,6 +38,13 @@ alias ls='ls'
 alias l='$(which ls)'
 alias ge='setxkbmap -layout de'
 
+# Command line head / tail shortcuts
+alias -g H='| head'
+alias -g T='| tail'
+alias -g G='| rg'
+alias -g L="| less"
+
+
 # change dir fzf all from home  / all from root / whithout hidden from home
 
 alias gla='glances'
