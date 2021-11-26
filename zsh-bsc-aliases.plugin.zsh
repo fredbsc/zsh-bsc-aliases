@@ -27,9 +27,6 @@ alias c='clear'
 alias e='exit'
 alias b='cd ~-'
 alias hg=history_fzf
-alias realias='source ~/.bash_aliases'
-alias doc='vi ~/clidoc.md'
-alias ccat='highlight --out-format=ansi'
 export COLUMNS  # Remember columns for subprocesses.
 function ls {
   command ls --color=always -hals "$@" | less -R -X -F
@@ -88,8 +85,6 @@ alias hs5up='echo "bringing up homestead PHP 5.6 and sshing in ... ...";cd ~/Php
 alias hs5down='echo "stopping homestead PHP 5.6 box ... ..."; cd ~/PhpCode/homestead56/; vagrant halt'
 alias hss5='echo "sshing to homestead PHP 5.6 box ... ..."; cd ~/PhpCode/homestead56/; vagrant ssh -c "cd ~/PhpCode; ls; bash --login"'
 alias hs5edit='cd ~/.homestead-56/; vi Homestead.yaml'
-
-alias sub='/home/fred/Programme-ssd/sublime/sublime_text'
 source ~/.homestead/aliases
 
 #laradock
