@@ -43,6 +43,13 @@ alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| rg'
 alias -g L="| less"
+alias -g GT="| awk '{ print $0; s+=1 } END { print \"grand total: \"s }'   "
+alias -g LL="2>&1 | less"
+alias -g NUL="> /dev/null 2>&1"
+
+# disk usage 
+alias dud='du -d 1 -h'
+alias duf='du -sh *'
 
 
 # change dir fzf all from home  / all from root / whithout hidden from home
