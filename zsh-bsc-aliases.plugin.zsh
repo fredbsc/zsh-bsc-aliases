@@ -66,6 +66,10 @@ alias sshrc='TERM=xterm sshrc'
 # PDF
 alias z='zathura'
 
+# Golang
+alias ggta="grc go test ./..."  
+alias ggtav="grc go test ./... -v" 
+
 #laravel programming
 alias art='php artisan $OPTIONS'
 alias lroute='php artisan route:list'
