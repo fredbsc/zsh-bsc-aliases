@@ -56,11 +56,11 @@ alias duf='du -sh *'
 alias gla='glances'
 
 #glab - Gitlab cli
-glabil="glab issue list"
-glabila="glab issue list --all"
-glabiv="glab issue view"
-glabivw="glab issue view --web"
-glabrv="glab repo view --web"
+glabil='glab issue list'
+glabila='glab issue list --all'
+glabiv='glab issue view'
+glabivw='glab issue view --web'
+glabrv='glab repo view --web'
 
 # remote terminal
 alias ssh='TERM=xterm ssh'
