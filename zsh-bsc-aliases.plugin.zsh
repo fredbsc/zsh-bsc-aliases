@@ -76,6 +76,8 @@ alias z='zathura'
 # Golang
 alias ggta="grc go test ./..."  
 alias ggtav="grc go test ./... -v" 
+alias ggtaw="watch -c -n 3 grc --colour=on go test ./..."
+alias ggtavw="watch -c -n 3 grc --colour=on go test -v ./..."
 
 #laravel programming
 alias art='php artisan $OPTIONS'
