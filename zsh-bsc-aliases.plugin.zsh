@@ -154,7 +154,7 @@ complete -F _todo tb
 
 #taskbook
 alias t='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb'
-alias ts='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb -l star'
+alias tu='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb -l star pending'
 alias tl='tb | less'
 
 # timetrap
