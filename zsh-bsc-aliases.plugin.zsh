@@ -41,6 +41,7 @@ alias -g T='| tail'
 alias -g G='| rg'
 alias -g L="| less"
 alias -g S="| sort"
+alias -g X="| xc"
 alias -g SU="| sort | uniq"
 alias -g GT="| awk '{ print \$0; s+=1 } END { print \"lines: \"s }'"
 alias -g LL="2>&1 | less"
