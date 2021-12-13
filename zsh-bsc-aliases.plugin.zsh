@@ -169,6 +169,7 @@ alias tl='tb | less'
 
 # timetrap
 alias tz='figlet -f smslant "timetrap  "$(LANG=en_us_88591; date +"%a  %b%d") && echo "https://github.com/samg/timetrap" && echo "" && timetrap'
+alias tn="tzt new"
 
 # weight
 alias we='/run/media/fred/tower/data/programming/py/scrap/weight/wei.sh'
