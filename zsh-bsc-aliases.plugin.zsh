@@ -160,7 +160,7 @@ alias rsy="rsync -avzu --delete --progress -h"
 #todo.txt
 export TODOTXT_DEFAULT_ACTION=ls
 alias tt='figlet -f smslant "todo  "$(LANG=en_us_88591; date +"%a  %b%d") && /home/fred/dotfiles/todo.txt/todo.sh'
-source /home/fred/dotfiles/todo.txt/todo_completion
+[[ -f /home/fred/dotfiles/todo.txt/todo_completion ]] && source /home/fred/dotfiles/todo.txt/todo_completion
 complete -F _todo tb
 
 #taskbook
