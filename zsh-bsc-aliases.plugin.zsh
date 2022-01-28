@@ -227,7 +227,7 @@ alias oelv-nas='ssh -p 2222 admin@oelv1'
 # Descibe CSV - DCSV
 # Split the Headline of csv in single lines to print numbers and fieldcount
 function dcsv(){
- head -n 1 $0 | sed "s/,/\n/g" | awk '{print "$"NR": " $0} END {print "FieldCount: "NR}'
+ head -n 1 $1 | sed "s/,/\n/g" | awk '{print "$"NR": " $0} END {print "FieldCount: "NR}'
 }
 
 # aliases for remote hosts
