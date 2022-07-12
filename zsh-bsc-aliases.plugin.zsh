@@ -179,7 +179,7 @@ alias ci='code-insiders'
 
 # issue
 alias i='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue'
-alias is='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue show -c'
+alias ic='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue show -c'
 
 # habito habit manager
 alias ha='figlet -f smslant  "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito'
