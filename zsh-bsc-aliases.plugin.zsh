@@ -12,6 +12,9 @@ source ~/scripts/googler_at
 alias ducks='sudo du -cks * | sort -rn | head -11'
 alias ducksm='sudo du -cms * | sort -rn | head -11'
 
+# use mpv for youtube
+alias umpv='mpv --script-opts=ytdl_hook-ytdl_path=yt-dlp'
+
 # list all aliases
 alias aliases="compgen -a"
 alias ali='alias | fzf'
