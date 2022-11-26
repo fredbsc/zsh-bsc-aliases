@@ -229,6 +229,19 @@ alias s='trs ssh_to'
 
 alias oelv-nas='ssh -p 2222 admin@oelv1'
 
+lg()
+{
+    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+
+    lazygit "$@"
+
+    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
+            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
+            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
+    fi
+}
+alias lg=lg
+
 # Descibe CSV - DCSV
 # Split the Headline of csv in single lines to print numbers and fieldcount
 function dcsv(){
