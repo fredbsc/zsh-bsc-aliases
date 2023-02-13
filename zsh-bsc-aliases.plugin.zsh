@@ -19,7 +19,7 @@ alias vi='/usr/bin/nvim'
 alias vig='/opt/goneovim-v0.4.12/goneovim'
 
 #system helpers
-alias cat="bat"
+	alias cat="bat"
 alias ..="cd .."
 alias ...="cd ../.."
 alias h='cd ~'
@@ -305,6 +305,7 @@ alias dspace=dspacefunction
 
 alias pe='pet'
 alias p='pet exec'
+alias psx='pet search | xc'
 alias pn='pet new'
 function prev() {
   PREV=$(fc -lrn | head -n 1)
