@@ -305,7 +305,7 @@ alias dspace=dspacefunction
 
 alias pe='pet'
 alias p='pet exec'
-alias psx='pet search | xc'
+alias px='pet search | xc'
 alias pn='pet new'
 function prev() {
   PREV=$(fc -lrn | head -n 1)
