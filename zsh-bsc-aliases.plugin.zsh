@@ -325,4 +325,4 @@ alias sbb='buku'
 alias sbs='google-chrome-stable $(buku -p -f 10 | fzf)'
 alias sbu='buku --ai' # Update bokmarks
 alias sg='googler'
-alias transe='trans {=en}'
+alias transd='trans {=de}'
