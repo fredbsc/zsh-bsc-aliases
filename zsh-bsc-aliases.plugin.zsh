@@ -37,6 +37,7 @@ alias ge='setxkbmap -layout de'
 
 # Command line head / tail shortcuts
 alias -g M='| mailme'
+alias -g E='| exc'
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| rg'
