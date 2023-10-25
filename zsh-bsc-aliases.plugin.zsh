@@ -36,6 +36,7 @@ alias l='$(which ls)'
 alias ge='setxkbmap -layout de'
 
 # Command line head / tail shortcuts
+alias -g CF='| rg -v "(#|^$)"'
 alias -g M='| mailme'
 alias -g E='| exc'
 alias -g H='| head'
