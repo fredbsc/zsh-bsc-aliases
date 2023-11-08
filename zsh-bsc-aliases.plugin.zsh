@@ -59,7 +59,7 @@ alias jj='cd $(j -s | head -n -7 | awk "{ print \$2 }" | fzf)'
 alias jp='j --purge'
 
 # disk usage 
-alias du='duf'
+alias df='duf'
 
 alias dig='dog'
 
