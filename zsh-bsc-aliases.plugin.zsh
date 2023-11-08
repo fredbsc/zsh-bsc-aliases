@@ -33,8 +33,8 @@ function ls {
 }
 # alias ls='ls'
 alias l='$(which ls)'
-alias la='exa --tree --level 2 --long -ah --color=always | bat -p' 
-alias ls='exa --long -ah --color=always | bat -p' 
+alias la='exa --tree --level 2 --long -a --color=always | bat -p' 
+alias ls='exa --long -a --color=always | bat -p' 
 
 alias ge='setxkbmap -layout de'
 
