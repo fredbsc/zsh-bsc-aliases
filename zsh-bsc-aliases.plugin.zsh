@@ -31,8 +31,11 @@ export COLUMNS  # Remember columns for subprocesses.
 function ls {
   command ls --color=always -hals "$@" | less -R -X -F
 }
-alias ls='ls'
+# alias ls='ls'
 alias l='$(which ls)'
+alias la='exa --tree --level 2 --long -ah --color=always | bat -p' 
+alias ls='exa --long -ah --color=always | bat -p' 
+
 alias ge='setxkbmap -layout de'
 
 # Command line head / tail shortcuts
