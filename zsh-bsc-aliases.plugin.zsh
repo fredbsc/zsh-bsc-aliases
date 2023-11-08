@@ -59,9 +59,9 @@ alias jj='cd $(j -s | head -n -7 | awk "{ print \$2 }" | fzf)'
 alias jp='j --purge'
 
 # disk usage 
-alias dud='du -d 1 -h'
-alias duf='du -sh *'
+alias du='duf'
 
+alias dig='dog'
 
 # change dir fzf all from home  / all from root / whithout hidden from home
 
