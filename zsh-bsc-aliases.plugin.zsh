@@ -17,6 +17,7 @@ alias aliases="compgen -a"
 alias ali='alias | fzf'
 alias vi='/usr/bin/nvim'
 alias vig='/opt/goneovim-v0.4.12/goneovim'
+va='NVIM_APPNAME=nvim-alternate nvim'
 
 #system helpers
 	alias cat="bat"
