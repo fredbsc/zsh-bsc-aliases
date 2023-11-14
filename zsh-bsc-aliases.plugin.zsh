@@ -104,7 +104,7 @@ alias sshrc='TERM=xterm sshrc'
 alias z='zathura'
  # Kanban tasksell
  alias ka="taskell"
- alias kp="taskell ~/owncloud/documents/tools/tasksell/tasksell.md"
+ alias kp="taskell ~/owncloud/documents/tools/taskell/taskell.md"
 
 
 # Golang
