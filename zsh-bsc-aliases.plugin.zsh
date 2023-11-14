@@ -102,6 +102,10 @@ alias sshrc='TERM=xterm sshrc'
 
 # PDF
 alias z='zathura'
+ # Kanban tasksell
+ alias ka="tasksell"
+ alias kp="tasksell ~/owncloud/documents/tools/tasksell/tasksell.md"
+
 
 # Golang
 alias ggta="grc go test ./..."  
