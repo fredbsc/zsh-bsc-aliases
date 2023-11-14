@@ -15,12 +15,29 @@ alias ducksm='sudo du -cms * | sort -rn | head -11'
 # list all aliases
 alias aliases="compgen -a"
 alias ali='alias | fzf'
-alias vi='/usr/bin/nvim'
-alias vig='/opt/goneovim-v0.4.12/goneovim'
+
+# Vim and NeoVim
+alias vm='/usr/bin/nvim'
 alias va='NVIM_APPNAME=nvim-alternate nvim'
+alias vk="NVIM_APPNAME=kickstart nvim"
+alias nl="NVIM_APPNAME=LazyVim nvim"
+
+function vi() {
+  items=( "default" "nvim-alternate" "kickstart" "LazyVim" )
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+# bindkey "^a" "nvims\n"
+
 
 #system helpers
-	alias cat="bat"
+alias cat="bat"
 alias ..="cd .."
 alias ...="cd ../.."
 alias h='cd ~'
