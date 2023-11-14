@@ -20,10 +20,16 @@ alias ali='alias | fzf'
 alias vm='/usr/bin/nvim'
 alias va='NVIM_APPNAME=nvim-alternate nvim'
 alias vk="NVIM_APPNAME=kickstart nvim"
+<<<<<<< HEAD
 alias nl="NVIM_APPNAME=lazyvim nvim"
 
 function vi() {
   items=( "default" "nvim-alternate" "kickstart" "lazyvim" )
+=======
+alias nl="NVIM_APPNAME=LazyVim nvim"
+
+function vi() {
+  items=( "default" "nvim-alternate" "kickstart" "LazyVim" )
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
