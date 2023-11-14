@@ -85,6 +85,11 @@ alias dig='dog'
 
 alias gla='glances'
 
+
+## Rofi Key Helper
+alias ä='/home/fred/scripts/keys.sh'
+alias ää='va ~/owncloud/documents/tools/rofi/keys.csv'
+
 #glab - Gitlab cli
 alias glabil='glab issue list'
 alias glabila='glab issue list --all'
