@@ -29,7 +29,7 @@ function vi() {
     echo "Nothing selected"
     return 0
   elif [[ $config == "default" ]]; then
-      nvim $@
+      config=""
   fi
   NVIM_APPNAME=$config nvim $@
 }
