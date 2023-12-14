@@ -46,11 +46,11 @@ alias e='exit'
 alias b='cd ~-'
 alias hg=history_fzf
 export COLUMNS  # Remember columns for subprocesses.
-function ls {
-  command ls --color=always -hals "$@" | less -R -X -F
-}
+# function ls {
+#   command ls --color=always -hals "$@" | less -R -X -F
+# }
 # alias ls='ls'
-alias l='$(which ls)'
+alias l='/bin/ls'
 alias la='exa --tree --level 2 --long -a --color=always | bat -p' 
 alias ls='exa --long -a --color=always | bat -p' 
 
