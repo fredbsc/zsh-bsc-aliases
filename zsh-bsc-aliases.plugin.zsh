@@ -361,3 +361,6 @@ alias sbu='buku --ai' # Update bokmarks
 alias sg='googler'
 alias transd='trans {=de}'
 alias transe='trans {=en}'
+
+# Emoji  finder
+alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \" -f 1 | emoji-fzf get | xclip"
