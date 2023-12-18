@@ -359,8 +359,8 @@ alias sbb='buku'
 alias sbs='google-chrome-stable $(buku -p -f 10 | fzf)'
 alias sbu='buku --ai' # Update bokmarks
 alias sg='googler'
-alias transd='trans {=de}'
-alias transe='trans {=en}'
+alias transd='trans {en=de}'
+alias transe='trans {de=en}'
 
 # Emoji  finder
 alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \" -f 1 | emoji-fzf get | xclip"
