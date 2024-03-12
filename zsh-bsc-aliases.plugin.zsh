@@ -362,5 +362,8 @@ alias sg='googler'
 alias transd='trans {en=de}'
 alias transe='trans {de=en}'
 
+# russ rss reader
+alias rss='russ read -d ~/owncloud/documents/tools/russ/rss.db'
+
 # Emoji  finder
 alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \" -f 1 | emoji-fzf get | xclip"
