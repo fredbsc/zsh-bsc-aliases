@@ -362,7 +362,7 @@ alias sg='googler'
 alias transd='trans {en=de}'
 alias transe='trans {de=en}'
 
-# russ rss reader
+# russ rss reader - chaanged vom r to rss
 alias rss='russ read -d ~/owncloud/documents/tools/russ/rss.db'
 
 # Emoji  finder
