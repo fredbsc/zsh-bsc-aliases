@@ -84,6 +84,7 @@ alias dig='dog'
 # change dir fzf all from home  / all from root / whithout hidden from home
 
 alias gla='glances'
+alias pm='~/go/bin/pulsemanager'
 
 # bashly - bash script geneartion
 alias bashly='docker run --rm -it --user $(id -u):$(id -g) --volume "$PWD:/app" dannyben/bashly'
