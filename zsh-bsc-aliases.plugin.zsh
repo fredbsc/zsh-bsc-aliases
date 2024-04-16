@@ -20,10 +20,7 @@ alias ali='alias | fzf'
 alias vm='/usr/bin/nvim'
 alias va='NVIM_APPNAME=nvim-alternate nvim'
 alias vk="NVIM_APPNAME=nvim-kickstart nvim"
-
-function vi() {
-  NVIM_APPNAME=nvim-lazyvim nvim
-}
+alias vi='NVIM_APPNAME=nvim-lazyvim nvim'
 
 function vv() {
   items=( "nvim-alternate" "default" "nvim-kickstart" "nvim-lazyvim" )
