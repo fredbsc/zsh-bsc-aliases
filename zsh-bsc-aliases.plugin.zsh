@@ -91,6 +91,7 @@ alias pm='~/go/bin/pulsemanager'
 alias by='bashly'
 
 # manage topothek containers
+# status and restart
 alias stt='ssh fred@ttnew tt'
 
 ## Rofi Key Helper
