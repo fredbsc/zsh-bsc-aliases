@@ -87,7 +87,11 @@ alias gla='glances'
 alias pm='~/go/bin/pulsemanager'
 
 # bashly - bash script geneartion
-alias bashly='docker run --rm -it --user $(id -u):$(id -g) --volume "$PWD:/app" dannyben/bashly'
+# alias bashly='docker run --rm -it --user $(id -u):$(id -g) --volume "$PWD:/app" dannyben/bashly'
+alias by='bashly'
+
+# manage topothek containers
+alias stt='ssh fred@ttnew tt'
 
 ## Rofi Key Helper
 alias ä='/home/fred/scripts/keys.sh'
