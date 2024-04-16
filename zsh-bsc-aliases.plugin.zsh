@@ -90,6 +90,9 @@ alias pm='~/go/bin/pulsemanager'
 # alias bashly='docker run --rm -it --user $(id -u):$(id -g) --volume "$PWD:/app" dannyben/bashly'
 alias by='bashly'
 
+# manage topothek containers
+alias stt='ssh fred@ttnew tt'
+
 ## Rofi Key Helper
 alias ä='/home/fred/scripts/keys.sh'
 alias ää='va ~/owncloud/documents/tools/rofi/keys.csv'
