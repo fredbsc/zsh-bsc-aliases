@@ -57,7 +57,7 @@ alias ls='exa --long -a --color=always | bat -p'
 alias ge='setxkbmap -layout de'
 
 # pop cli email
-alias mm='pop -t "$(gum filter < ~/scripts/popcontacts.txt)"'
+alias mm='pop -t "$(gum filter < ~/scripts/popcontacts.txt)" --bcc mb@bsc.at'
 alias mme='nvim ~/scripts/popcontacts.txt'
 
 # Command line head / tail shortcuts
