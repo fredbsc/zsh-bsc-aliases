@@ -63,6 +63,12 @@ alias mme='nvim ~/scripts/popcontacts.txt'
 # puh - where to got for a quick test
 alias puh='mcdir /tmp/xx_$(date +"%Y%m%d-%H:%M:%s")'
 
+function xx()
+{
+  cd $(~/scripts/xxprj $1 $2) 
+}
+
+
 # Command line head / tail shortcuts
 alias -g CF='| rg -v "(#|^$)"'
 alias -g M='| mailme'
