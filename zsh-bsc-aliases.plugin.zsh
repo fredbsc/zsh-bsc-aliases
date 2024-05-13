@@ -67,7 +67,6 @@ function xx()
 {
   cd $(~/scripts/xxprj $@) 
 }
-alias xx=xx()
 
 
 # Command line head / tail shortcuts
