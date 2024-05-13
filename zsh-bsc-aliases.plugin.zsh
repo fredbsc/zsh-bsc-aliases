@@ -65,7 +65,7 @@ alias puh='mcdir /tmp/xx_$(date +"%Y%m%d-%H:%M:%s")'
 
 function xx()
 {
-  cd $(~/scripts/xxprj $1 $2) 
+  cd $(~/scripts/xxprj $@) 
 }
 
 
