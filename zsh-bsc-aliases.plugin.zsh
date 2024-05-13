@@ -60,6 +60,9 @@ alias ge='setxkbmap -layout de'
 alias mm='pop -t "$(gum filter < ~/scripts/popcontacts.txt)"'
 alias mme='nvim ~/scripts/popcontacts.txt'
 
+# puh - where to got for a quick test
+alias puh='mcdir /tmp/xx_$(date +"%Y%m%d-%H:%M:%s")'
+
 # Command line head / tail shortcuts
 alias -g CF='| rg -v "(#|^$)"'
 alias -g M='| mailme'
