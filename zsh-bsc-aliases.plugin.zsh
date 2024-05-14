@@ -56,6 +56,8 @@ alias ls='exa --long -a --color=always | bat -p'
 
 alias ge='setxkbmap -layout de'
 
+alias ssoft='ssh soft'
+
 # pop cli email
 alias mm='pop -t "$(gum filter < ~/scripts/popcontacts.txt)"'
 alias mme='nvim ~/scripts/popcontacts.txt'
