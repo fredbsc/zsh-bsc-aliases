@@ -111,7 +111,7 @@ alias stt='ssh -t fred@ttnew tt'
 
 ## Rofi Key Helper
 alias ä='/home/fred/scripts/keys.sh'
-alias ää='va ~/owncloud/documents/tools/rofi/keys.csv'
+alias ää='vi ~/owncloud/documents/tools/rofi/keys.csv'
 
 #glab - Gitlab cli
 alias glabil='glab issue list'
