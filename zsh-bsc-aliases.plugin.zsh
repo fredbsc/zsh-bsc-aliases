@@ -86,7 +86,7 @@ alias -g SU="| sort | uniq"
 alias -g GT="| awk '{ print \$0; s+=1 } END { print \"lines: \"s }'"
 alias -g LL="2>&1 | less"
 alias -g NUL="> /dev/null 2>&1"
-
+alias -g NC="| sed 's/\\x1b\\[[0-9;]*m//g'"
 # jump 
 alias jj='cd $(j -s | head -n -7 | awk "{ print \$2 }" | fzf)'
 alias jp='j --purge'
