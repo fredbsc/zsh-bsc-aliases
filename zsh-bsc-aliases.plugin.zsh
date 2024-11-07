@@ -108,7 +108,7 @@ alias by='bashly'
 # manage topothek containers
 # status and restart
 alias stt='ssh -t fred@ttnew tt'
-alias sts='ssh -t fred@ttnew'
+alias sts='ssh fred@ttnew'
 alias sqlblk='ssh -t fred@ttnew sqlblk'
 
 ## Rofi Key Helper
