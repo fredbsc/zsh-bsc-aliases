@@ -111,6 +111,7 @@ alias stt='ssh -t fred@ttnew tt'
 alias sts='ssh fred@ttnew'
 alias sqlblk='ssh -t fred@ttnew sqlblk'
 
+alias du1='dust -d 1'
 ## Rofi Key Helper
 alias ä='/home/fred/scripts/keys.sh'
 alias ää='vi ~/owncloud/documents/tools/rofi/keys.csv'
