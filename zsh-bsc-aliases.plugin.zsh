@@ -200,7 +200,7 @@ alias tn="tzt new"
 # weight
 alias we='/run/media/fred/tower/data/programming/py/scrap/weight/wei.sh'
 
-alias ci='code-insiders'
+alias ci='code'
 
 # issue
 alias i='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue'
