@@ -150,22 +150,6 @@ alias lroute='php artisan route:list'
 alias csep='vendor/bin/codecept'
 alias pu='vendor/phpunit/phpunit/phpunit'
 
-#vagrant
-alias vaprobash="curl -L http://bit.ly/vaprobash > Vagrantfile"
-alias vss='vagrant ssh -c "sudo su -; bash --login"'
-alias vsgo='echo "bringing vagrant up and sshing as root ... .... ";vagrant up && vagrant provision && vagrant ssh -c "sudo su -;cd /vagrant; bash --login"'
-
-#homestead
-alias hs7up='echo "bringing up homestead PHP 7 and sshing in ... ...";cd ~/PhpCode/homestead/;vagrant up && vagrant ssh -c "cd ~/PhpCode; ls"'
-alias hs7down='echo "stopping homestead box ... ..."; cd ~/PhpCode/homestead/; vagrant halt'
-alias hss7='echo "sshing to homestead PHP 7 box ... ..."; cd ~/PhpCode/homestead/; vagrant ssh -c "cd ~/PhpCode; ls; bash --login"'
-alias hs7edit='cd ~/.homestead/; vi Homestead.yaml'
-
-alias hs5up='echo "bringing up homestead PHP 5.6 and sshing in ... ...";cd ~/PhpCode/homestead56/;vagrant up && vagrant ssh -c "cd ~/PhpCode; ls"'
-alias hs5down='echo "stopping homestead PHP 5.6 box ... ..."; cd ~/PhpCode/homestead56/; vagrant halt'
-alias hss5='echo "sshing to homestead PHP 5.6 box ... ..."; cd ~/PhpCode/homestead56/; vagrant ssh -c "cd ~/PhpCode; ls; bash --login"'
-alias hs5edit='cd ~/.homestead-56/; vi Homestead.yaml'
-source ~/.homestead/aliases
 
 #laradock
 alias dc='time docker-compose'
@@ -184,31 +168,9 @@ alias dolm='docker-compose exec mysql bash'
 alias dolmm='docker-compose exec mysql /usr/bin/mysql'
 alias dolmdump='docker-compose exec mysql /usr/bin/mysqldump'
 
-
-
-# laravel/vagrant project donkey
-alias donup='cd /home/fred/PhpCode/donkey; vagrant up && vagrant ssh -c "cd /vagrant/laravel; bash --login"'
-alias dond="cd /home/fred/PhpCode/donkey; vagrant halt"
-alias donb='cd /home/fred/PhpCode/donkey/laravel; google-chrome --new-window "http://donkey.bsc.at/" "http://laravel.com/docs/5.1"'
-alias dons='cd /home/fred/PhpCode/donkey; vagrant ssh -c "cd /vagrant/laravel; bash --login"'
-alias donart='cd /home/fred/PhpCode/donkey/laravel/; art'
-alias dong='cd /home/fred/PhpCode/donkey/laravel/; gulp watch'
-
-# laravel Project Donkey on EDI
-alias ssd='ssh root@edi -t "cd /var/www/donkey/laravel; bash --login"'
-
-#laravel KGV MARUNAS Project
-alias kgvb='cd /home/fred/PhpCode/dev-marunas; google-chrome --new-window "http://dev-marunas.bsc.at/" "http://laravel.com/docs/4.2"'
-alias kgvart='cd /home/fred/PhpCode/dev-marunas; art'
-alias sskgv='ssh root@edi -t "cd /var/www/dev-marunas/; bash --login"'
-
 # kubernetes
 alias kk='kubectl'
 alias kg='kubectl get'
-
-# sql statment store
-alias sq='sqe yank'
-alias sqn='sqe new'
 
 #ansible
 alias ap='ansible-playbook'
@@ -244,12 +206,6 @@ alias ci='code-insiders'
 alias i='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue'
 alias ic='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue show -c'
 
-# habito habit manager
-alias ha='figlet -f smslant  "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito'
-alias hac='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito checkin'
-alias hal='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito list'
-alias haa='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito add'
-
 # geeknote - evernote cli 
 alias g='geeknote'
 
@@ -257,7 +213,7 @@ alias g='geeknote'
 alias py='python'
 
 # dmesg with readable timestamps
-alias kmesg='dmesg | perl -ne "BEGIN{\$a= time()- qx!cat /proc/uptime!}; s/\[\s*(\d+)\.\d+\]/localtime(\$1 + \$a)/e; print \$_;"'
+alias kmesg='sudo dmesg | perl -ne "BEGIN{\$a= time()- qx!cat /proc/uptime!}; s/\[\s*(\d+)\.\d+\]/localtime(\$1 + \$a)/e; print \$_;"'
 
 # google chrome
 alias chrome='/usr/bin/google-chrome-stable'
@@ -286,7 +242,6 @@ alias trs='tmuxinator start'
 alias trl='tmuxinator list'
 alias s='trs ssh_to'
 
-alias oelv-nas='ssh -p 2222 admin@oelv1'
 
 lg()
 {
@@ -391,3 +346,48 @@ alias rss='russ read -d ~/owncloud/documents/tools/russ/rss.db'
 
 # Emoji  finder
 alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \" -f 1 | emoji-fzf get | xclip"
+
+
+# OUTDATED
+# alias oelv-nas='ssh -p 2222 admin@oelv1'
+# #vagrant
+# alias vaprobash="curl -L http://bit.ly/vaprobash > Vagrantfile"
+# alias vss='vagrant ssh -c "sudo su -; bash --login"'
+# alias vsgo='echo "bringing vagrant up and sshing as root ... .... ";vagrant up && vagrant provision && vagrant ssh -c "sudo su -;cd /vagrant; bash --login"'
+#
+# #homestead
+# alias hs7up='echo "bringing up homestead PHP 7 and sshing in ... ...";cd ~/PhpCode/homestead/;vagrant up && vagrant ssh -c "cd ~/PhpCode; ls"'
+# alias hs7down='echo "stopping homestead box ... ..."; cd ~/PhpCode/homestead/; vagrant halt'
+# alias hss7='echo "sshing to homestead PHP 7 box ... ..."; cd ~/PhpCode/homestead/; vagrant ssh -c "cd ~/PhpCode; ls; bash --login"'
+# alias hs7edit='cd ~/.homestead/; vi Homestead.yaml'
+#
+# alias hs5up='echo "bringing up homestead PHP 5.6 and sshing in ... ...";cd ~/PhpCode/homestead56/;vagrant up && vagrant ssh -c "cd ~/PhpCode; ls"'
+# alias hs5down='echo "stopping homestead PHP 5.6 box ... ..."; cd ~/PhpCode/homestead56/; vagrant halt'
+# alias hss5='echo "sshing to homestead PHP 5.6 box ... ..."; cd ~/PhpCode/homestead56/; vagrant ssh -c "cd ~/PhpCode; ls; bash --login"'
+# alias hs5edit='cd ~/.homestead-56/; vi Homestead.yaml'
+# source ~/.homestead/aliases
+# # laravel/vagrant project donkey
+# alias donup='cd /home/fred/PhpCode/donkey; vagrant up && vagrant ssh -c "cd /vagrant/laravel; bash --login"'
+# alias dond="cd /home/fred/PhpCode/donkey; vagrant halt"
+# alias donb='cd /home/fred/PhpCode/donkey/laravel; google-chrome --new-window "http://donkey.bsc.at/" "http://laravel.com/docs/5.1"'
+# alias dons='cd /home/fred/PhpCode/donkey; vagrant ssh -c "cd /vagrant/laravel; bash --login"'
+# alias donart='cd /home/fred/PhpCode/donkey/laravel/; art'
+# alias dong='cd /home/fred/PhpCode/donkey/laravel/; gulp watch'
+#
+# # laravel Project Donkey on EDI
+# alias ssd='ssh root@edi -t "cd /var/www/donkey/laravel; bash --login"'
+#
+# #laravel KGV MARUNAS Project
+# alias kgvb='cd /home/fred/PhpCode/dev-marunas; google-chrome --new-window "http://dev-marunas.bsc.at/" "http://laravel.com/docs/4.2"'
+# alias kgvart='cd /home/fred/PhpCode/dev-marunas; art'
+# alias sskgv='ssh root@edi -t "cd /var/www/dev-marunas/; bash --login"'
+# sql statment store
+# alias sq='sqe yank'
+# alias sqn='sqe new'
+#
+# # habito habit manager
+# alias ha='figlet -f smslant  "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito'
+# alias hac='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito checkin'
+# alias hal='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito list'
+# alias haa='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito add'
+#
