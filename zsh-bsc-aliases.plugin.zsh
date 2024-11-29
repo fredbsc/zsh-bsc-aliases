@@ -232,17 +232,6 @@ alias sshh='ssh root@hhost -t "screen -r vms; bash --login"'
 alias ssih='ssh root@ihost -t "cd /home/KVMBACK; bash --login"'
 #alias ball='cd /home/fred/mint-raid/serverbackup/; ./save_all.sh'
 
-# update
-alias upgrade='echo "apt update and upgrade?";sudo apt-get update && sudo apt-get upgrade -yy'
-
-# TMUX and sessions
-alias tr='tmuxinator'
-alias tre='tmuxinator edit'
-alias trs='tmuxinator start'
-alias trl='tmuxinator list'
-alias s='trs ssh_to'
-
-
 lg()
 {
     export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
@@ -341,11 +330,8 @@ alias sg='googler'
 alias transd='trans {en=de}'
 alias transe='trans {de=en}'
 
-# russ rss reader - chaanged vom r to rss
-alias rss='russ read -d ~/owncloud/documents/tools/russ/rss.db'
-
 # Emoji  finder
-alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \" -f 1 | emoji-fzf get | xclip"
+alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \" -f 1 | emoji-fzf get | xc"
 
 
 # OUTDATED
@@ -391,3 +377,17 @@ alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \"
 # alias hal='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito list'
 # alias haa='figlet -f smslant "habito  "$(LANG=en_us_88591; date +"%a  %b%d") && ~/.local/bin/habito add'
 #
+# update
+# alias upgrade='echo "apt update and upgrade?";sudo apt-get update && sudo apt-get upgrade -yy'
+
+
+# TMUX and sessions
+alias tr='tmuxinator'
+alias tre='tmuxinator edit'
+alias trs='tmuxinator start'
+alias trl='tmuxinator list'
+alias s='trs ssh_to'
+
+
+# russ rss reader - chaanged vom r to rss
+# alias rss='russ read -d ~/owncloud/documents/tools/russ/rss.db'
