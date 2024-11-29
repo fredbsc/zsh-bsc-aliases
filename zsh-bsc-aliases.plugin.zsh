@@ -168,10 +168,6 @@ alias dolm='docker-compose exec mysql bash'
 alias dolmm='docker-compose exec mysql /usr/bin/mysql'
 alias dolmdump='docker-compose exec mysql /usr/bin/mysqldump'
 
-# kubernetes
-alias kk='kubectl'
-alias kg='kubectl get'
-
 #ansible
 alias ap='ansible-playbook'
 alias an='ansible'
@@ -197,9 +193,7 @@ alias tl='tb | less'
 alias tz='figlet -f smslant "timetrap  "$(LANG=en_us_88591; date +"%a  %b%d") && echo "https://github.com/samg/timetrap" && echo "" && timetrap'
 alias tn="tzt new"
 
-# weight
-alias we='/run/media/fred/tower/data/programming/py/scrap/weight/wei.sh'
-
+# vscode
 alias ci='code'
 
 # issue
@@ -391,3 +385,10 @@ alias s='trs ssh_to'
 
 # russ rss reader - chaanged vom r to rss
 # alias rss='russ read -d ~/owncloud/documents/tools/russ/rss.db'
+
+# weight
+# alias we='/run/media/fred/tower/data/programming/py/scrap/weight/wei.sh'
+
+# kubernetes
+# alias kk='kubectl'
+# alias kg='kubectl get'
