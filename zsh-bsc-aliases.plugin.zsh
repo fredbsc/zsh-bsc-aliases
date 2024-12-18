@@ -107,9 +107,9 @@ alias by='bashly'
 
 # manage topothek containers
 # status and restart
-alias stt='TERM=xterm-256color ssh -t fred@ttnew tt'
-alias sts='TERM=xterm-256color ssh fred@ttnew'
-alias sqlblk='TERM=xterm-256color ssh -t fred@ttnew sqlblk'
+alias stt='ssh -t fred@ttnew tt'
+alias sts='ssh fred@ttnew'
+alias sqlblk='ssh -t fred@ttnew sqlblk'
 
 alias du1='dust -d 1'
 ## Rofi Key Helper
