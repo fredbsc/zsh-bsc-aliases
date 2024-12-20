@@ -88,6 +88,12 @@ alias -g LL="2>&1 | less"
 alias -g NUL="> /dev/null 2>&1"
 alias -g NC="| sed 's/\\x1b\\[[0-9;]*m//g'"
 alias CE='1> >(cry) 2> >(cry -a)'
+alias -g MS='| mods'
+alias -g MSD='| mods -C'
+
+# Mods 
+alias ms='mods'
+alias msc='mods -C'
 
 # jump 
 alias jj='cd $(j -s | head -n -7 | awk "{ print \$2 }" | fzf)'
