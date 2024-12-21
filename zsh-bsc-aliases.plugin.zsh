@@ -88,12 +88,13 @@ alias -g LL="2>&1 | less"
 alias -g NUL="> /dev/null 2>&1"
 alias -g NC="| sed 's/\\x1b\\[[0-9;]*m//g'"
 alias CE='1> >(cry) 2> >(cry -a)'
-alias -g MS='| mods'
-alias -g MSD='| mods -C'
+alias -g MS='| mods --theme catppuccin'
+alias -g MSD='| mods --theme catppuccin -C'
 
-# Mods 
-alias ms='mods'
-alias msc='mods -C'
+# mods --theme catppuccin 
+alias ms='mods --theme catppuccin'
+alias msc='mods --theme catppuccin -C'
+alias msr='mods --theme catppuccin --role'
 
 # jump 
 alias jj='cd $(j -s | head -n -7 | awk "{ print \$2 }" | fzf)'
