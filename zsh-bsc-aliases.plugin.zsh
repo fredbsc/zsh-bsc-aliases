@@ -120,6 +120,10 @@ alias stt='ssh -t fred@ttnew tt'
 alias sts='ssh fred@ttnew'
 alias sqlblk='ssh -t fred@ttnew sqlblk'
 
+
+alias sgs='ssh root@gb'
+alias sms='ssh root@mhost'
+
 alias du1='dust -d 1'
 ## Rofi Key Helper
 alias ä='/home/fred/scripts/keys.sh'
