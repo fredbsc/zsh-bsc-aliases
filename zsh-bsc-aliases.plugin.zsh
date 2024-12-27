@@ -121,8 +121,8 @@ alias sts='ssh fred@ttnew'
 alias sqlblk='ssh -t fred@ttnew sqlblk'
 
 
-alias sgs='ssh root@gb'
-alias sms='ssh root@mhost'
+alias sgs='TERM=xterm ssh root@gb'
+alias sms='TERM=xterm ssh root@mhost'
 
 alias du1='dust -d 1'
 ## Rofi Key Helper
