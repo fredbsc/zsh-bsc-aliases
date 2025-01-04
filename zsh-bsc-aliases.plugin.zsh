@@ -64,6 +64,7 @@ alias mme='nvim ~/scripts/popcontacts.txt'
 
 # puh - where to got for a quick test
 alias puh='mcdir /tmp/xx_$(date +"%Y%m%d-%H:%M:%s")'
+alias jpuh='ji $(\ls -d /tmp/xx_* | fzf)'
 
 function xx()
 {
