@@ -320,6 +320,8 @@ alias pe='pet'
 alias p='pet exec'
 alias px='pet search | xc'
 alias pn='pet new'
+alias prev='prev'
+alias jprev='jprev'
 function prev() {
   PREV=$(fc -lrn | head -n 1)
   sh -c "pet new `printf %q "$PREV"`"
