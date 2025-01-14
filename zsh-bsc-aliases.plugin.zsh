@@ -324,6 +324,11 @@ function prev() {
   PREV=$(fc -lrn | head -n 1)
   sh -c "pet new `printf %q "$PREV"`"
 }
+function jprev() {
+  PREV=$(fc -lrn | fzf)
+  sh -c "pet new `printf %q "$PREV"`"
+}
+
 
 # bash examples man page like
 alias he='tldr'
