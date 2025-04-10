@@ -128,6 +128,7 @@ alias sgs='ssh -t root@gb'
 alias sms='ssh -t root@mhost'
 alias sis='ssh -t root@ivir1'
 alias sihs='ssh -t root@iho2'
+alias sbs='ssh -t root@bnk'
 
 alias du1='dust -d 1'
 ## Rofi Key Helper
