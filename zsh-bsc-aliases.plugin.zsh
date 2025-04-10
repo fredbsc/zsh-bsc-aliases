@@ -337,10 +337,10 @@ alias he='tldr'
 source ~/.fuzzyrc
 
 # Serach bookmarks from cli
-alias sb='buku --suggest -r'
-alias sbb='buku'
-alias sbs='google-chrome-stable $(buku -p -f 10 | fzf)'
-alias sbu='buku --ai' # Update bokmarks
+# alias sb='buku --suggest -r'
+# alias sbb='buku'
+# alias sbs='google-chrome-stable $(buku -p -f 10 | fzf)'
+# alias sbu='buku --ai' # Update bokmarks
 alias sg='googler'
 alias transd='trans {en=de}'
 alias transe='trans {de=en}'
