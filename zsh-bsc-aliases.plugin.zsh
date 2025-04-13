@@ -45,6 +45,7 @@ alias c='clear'
 alias e='exit'
 alias b='cd ~-'
 alias hg=history_fzf
+alias fzfd='FZF_DEFAULT_OPTS='' fzf --no-sort --multi'
 export COLUMNS  # Remember columns for subprocesses.
 # function ls {
 #   command ls --color=always -hals "$@" | less -R -X -F
