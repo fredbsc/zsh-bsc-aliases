@@ -35,6 +35,12 @@ function vv() {
 }
 # bindkey "^a" "nvims\n"
 
+# music and volume
+alias mp='mocp --toggle-pause'
+alias vou='pactl set-sink-volume @DEFAULT_SINK@ +10%'
+alias vouu='pactl set-sink-volume @DEFAULT_SINK@ +25%'
+alias vod='pactl set-sink-volume @DEFAULT_SINK@ -10%'
+alias vodd='pactl set-sink-volume @DEFAULT_SINK@ -25%'
 
 #system helpers
 alias cat="bat"
