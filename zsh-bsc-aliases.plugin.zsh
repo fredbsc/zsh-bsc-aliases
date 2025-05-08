@@ -37,6 +37,8 @@ function vv() {
 
 # music and volume
 alias mp='mocp --toggle-pause'
+alias mpn='mocp --next'
+alias mpp='mocp --previous'
 alias vou='pactl set-sink-volume @DEFAULT_SINK@ +10%'
 alias vouu='pactl set-sink-volume @DEFAULT_SINK@ +25%'
 alias vod='pactl set-sink-volume @DEFAULT_SINK@ -10%'
