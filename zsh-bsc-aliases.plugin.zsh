@@ -41,7 +41,7 @@ alias mu='plyr'
 #system helpers
 alias cd='j'
 alias cx='ji'
-alias rr='cd /tmp/Downloads;y'
+alias rr='cd /tmp/Downloads;yazi'
 alias cat="bat"
 alias ..="cd .."
 alias ...="cd ../.."
