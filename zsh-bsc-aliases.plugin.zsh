@@ -37,6 +37,8 @@ function vv() {
 
 
 #system helpers
+alias cd='j'
+alias cdd='ji'
 alias cat="bat"
 alias ..="cd .."
 alias ...="cd ../.."
