@@ -39,6 +39,7 @@ function vv() {
 #system helpers
 alias cd='j'
 alias cx='ji'
+alias rr='cd /tmp/Downloads;y'
 alias cat="bat"
 alias ..="cd .."
 alias ...="cd ../.."
