@@ -221,7 +221,7 @@ alias i='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && iss
 alias ic='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue show -c'
 
 # geeknote - evernote cli 
-alias g='geeknote'
+alias q='qutebrowser 2>/dev/null &'
 
 #Python
 alias py='python'
