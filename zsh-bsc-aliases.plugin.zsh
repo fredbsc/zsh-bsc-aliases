@@ -403,11 +403,11 @@ alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \"
 
 
 # TMUX and sessions
-alias tr='tmuxinator'
-alias tre='tmuxinator edit'
-alias trs='tmuxinator start'
-alias trl='tmuxinator list'
-alias s='trs ssh_to'
+# alias tr='tmuxinator'
+# alias tre='tmuxinator edit'
+# alias trs='tmuxinator start'
+# alias trl='tmuxinator list'
+# alias s='trs ssh_to'
 
 
 # russ rss reader - chaanged vom r to rss
