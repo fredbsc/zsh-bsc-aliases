@@ -34,7 +34,7 @@ function vv() {
   NVIM_APPNAME=$config nvim $@
 }
 # bindkey "^a" "nvims\n"
-
+alias ma='HOME=/home/fred/owncloud/documents/tools/taskbook_marunas tb'
 
 #system helpers
 alias cd='j'
