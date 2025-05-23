@@ -37,7 +37,6 @@ function vv() {
 # music and volume
 alias mu='plyr'
 
-alias ma='HOME=/home/fred/owncloud/documents/tools/taskbook_marunas tb'
 
 #system helpers
 alias cd='j'
@@ -214,6 +213,8 @@ complete -F _todo tb
 alias t='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb'
 alias tu='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb -l star pending'
 alias tl='tb | less'
+alias ma='figlet -f smslant "marunas  "$(LANG=en_us_88591; date +"%a  %b%d") && HOME=/home/fred/owncloud/documents/tools/taskbook_marunas tb'
+alias mt='figlet -f smslant "marunas  "$(LANG=en_us_88591; date +"%a  %b%d") && HOME=/home/fred/owncloud/documents/tools/taskbook_marunas tb -l star pending'
 
 # timetrap
 alias tz='figlet -f smslant "timetrap  "$(LANG=en_us_88591; date +"%a  %b%d") && echo "https://github.com/samg/timetrap" && echo "" && timetrap'
