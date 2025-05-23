@@ -34,9 +34,10 @@ function vv() {
   NVIM_APPNAME=$config nvim $@
 }
 # bindkey "^a" "nvims\n"
-
 # music and volume
 alias mu='plyr'
+
+alias ma='HOME=/home/fred/owncloud/documents/tools/taskbook_marunas tb'
 
 #system helpers
 alias cd='j'
