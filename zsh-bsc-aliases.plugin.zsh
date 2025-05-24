@@ -230,6 +230,10 @@ alias ic='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && is
 # geeknote - evernote cli 
 alias q='qutebrowser 2>/dev/null &'
 
+# Github cli
+alias gcs='gh copilot suggest'
+alias gce='gh copilot explain'
+
 #Python
 alias py='python'
 
