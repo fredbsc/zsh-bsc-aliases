@@ -212,7 +212,7 @@ complete -F _todo tb
 #taskbook
 alias t='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb'
 alias tu='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb -l star pending'
-alias tl='tb | less'
+alias tl='figlet -f smslant "task  "$(LANG=en_us_88591; date +"%a  %b%d") && tb -l'
 alias ma='figlet -f smslant "marunas  "$(LANG=en_us_88591; date +"%a  %b%d") && HOME=/home/fred/owncloud/documents/tools/taskbook_marunas tb'
 alias mt='figlet -f smslant "marunas  "$(LANG=en_us_88591; date +"%a  %b%d") && HOME=/home/fred/owncloud/documents/tools/taskbook_marunas tb -l star pending'
 
