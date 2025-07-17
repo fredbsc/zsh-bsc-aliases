@@ -87,6 +87,7 @@ alias -g E='| exc'
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| rg'
+alias -g K='| kanex && taskell'
 alias -g L="| less"
 alias -g S="| sort"
 alias -g X="| xc"
