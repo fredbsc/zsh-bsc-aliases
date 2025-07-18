@@ -97,7 +97,7 @@ alias -g GT="| awk '{ print \$0; s+=1 } END { print \"lines: \"s }'"
 alias -g LL="2>&1 | less"
 alias -g NUL="> /dev/null 2>&1"
 alias -g NC="| sed 's/\\x1b\\[[0-9;]*m//g'"
-alias CE='1> >(cry) 2> >(cry -a)'
+alias -g CR='1> >(cry) 2> >(cry -a)'
 alias -g MS='| mods --theme catppuccin'
 alias -g MSD='| mods --theme catppuccin -C'
 
