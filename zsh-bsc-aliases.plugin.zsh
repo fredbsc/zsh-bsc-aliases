@@ -227,6 +227,7 @@ alias ci='code'
 # issue
 alias i='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue'
 alias ic='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue show -c'
+alias io='figlet -f smslant "issue  "$(LANG=en_us_88591; date +"%a  %b%d") && issue ls -o'
 
 # geeknote - evernote cli 
 alias q='qutebrowser 2>/dev/null &'
