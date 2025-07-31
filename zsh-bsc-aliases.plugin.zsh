@@ -57,8 +57,8 @@ export COLUMNS  # Remember columns for subprocesses.
 # }
 # alias ls='ls'
 alias l='/bin/ls'
-alias la='exa --tree --level 2 --long -a --color=always | bat -p' 
-alias ls='exa --long -a --color=always | bat -p' 
+alias la='eza --tree --level 2 --long -a --color=always --git | bat -p' 
+alias ls='eza --long -a --color=always --git | bat -p' 
 
 alias ge='setxkbmap -layout de'
 
