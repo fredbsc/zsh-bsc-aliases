@@ -41,6 +41,7 @@ alias mu='plyr'
 #system helpers
 alias cd='j'
 alias cx='ji'
+alias lx='ls | fzf --ansi'
 alias rr='cd /tmp/Downloads;yazi'
 alias cat="bat"
 alias ..="cd .."
