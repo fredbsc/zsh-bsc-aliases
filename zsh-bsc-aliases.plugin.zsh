@@ -17,7 +17,7 @@ alias aliases="compgen -a"
 alias ali='alias | fzf'
 
 # Vim and NeoVim
-alias vi='/usr/bin/nvim'
+alias vi='nvim'
 alias va='NVIM_APPNAME=nvim-alternate nvim'
 alias vk="NVIM_APPNAME=nvim-kickstart nvim"
 alias vm='NVIM_APPNAME=nvim-old nvim'
