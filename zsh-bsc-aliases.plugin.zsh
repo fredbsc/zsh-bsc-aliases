@@ -413,9 +413,9 @@ alias emoj="emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \"
 
 # TMUX and sessions
 # alias tr='tmuxinator'
-# alias tre='tmuxinator edit'
-# alias trs='tmuxinator start'
-# alias trl='tmuxinator list'
+alias tre='tmuxinator edit'
+alias trs='tmuxinator start'
+alias trl='tmuxinator list'
 # alias s='trs ssh_to'
 
 
