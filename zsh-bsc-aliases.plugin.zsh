@@ -70,7 +70,7 @@ alias mm='pop -t "$(gum filter < ~/scripts/popcontacts.txt)"'
 alias mme='nvim ~/scripts/popcontacts.txt'
 
 # puh - where to got for a quick test
-alias puh='mcdir /tmp/xx_$(date +"%Y%m%d-%H:%M:%S")'
+alias puh='mcdir /tmp/xx_$(date +"%Y%m%d_%H%M%S")'
 alias jpuh='ji $(\ls -d /tmp/xx_* | sort -r | fzf)'
 alias pug='puh && goinit'
 alias pub='puh && bainit'
