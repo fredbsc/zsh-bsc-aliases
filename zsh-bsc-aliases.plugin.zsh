@@ -109,6 +109,7 @@ alias msr='mods --theme catppuccin --role'
 
 alias gpro='gemini -m gemini-2.5-pro'
 alias gfla='gemini -m gemini-2.5-flash'
+alias glit='gemini -m gemini-2.5-flash-lite'
 
 # jump 
 alias jj='cd $(j -s | head -n -7 | awk "{ print \$2 }" | fzf)'
