@@ -103,9 +103,9 @@ alias -g MS='| mods --theme catppuccin'
 alias -g MSD='| mods --theme catppuccin -C'
 
 # mods --theme catppuccin 
-alias ms='mods --theme catppuccin'
-alias msc='mods --theme catppuccin -C'
-alias msr='mods --theme catppuccin --role'
+alias ms='mods -m flash --theme catppuccin'
+alias msc='mods -m flash --theme catppuccin -C'
+alias msr='mods -m flash --theme catppuccin --role'
 
 alias gpro='gemini -m gemini-2.5-pro'
 alias gfla='gemini -m gemini-2.5-flash'
