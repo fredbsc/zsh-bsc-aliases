@@ -130,6 +130,7 @@ alias pm='~/go/bin/pulsemanager'
 alias by='bashly'
 
 alias hy='hygg'
+alias ten='smassh'
 
 # manage topothek containers
 # status and restart
