@@ -129,6 +129,8 @@ alias pm='~/go/bin/pulsemanager'
 # alias bashly='docker run --rm -it --user $(id -u):$(id -g) --volume "$PWD:/app" dannyben/bashly'
 alias by='bashly'
 
+alias hy='hygg'
+
 # manage topothek containers
 # status and restart
 alias stt='ssh -t fred@ttnew tt'
